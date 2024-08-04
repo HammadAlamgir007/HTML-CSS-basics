@@ -1,0 +1,35 @@
+body{
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+.nav
+{
+  text-align: center;
+  font-size: larger;
+  text-transform: uppercase;
+  background-color:rgb(161, 161, 227);
+}
+article img {
+  width: 400px;
+  height: 300px;
+}
+article {
+  border: 5px solid black;
+}
+.more-info:link{
+color: black;
+}
+.more-info:hover{
+  text-decoration: none;
+}
+.cart
+{
+  background-color: black;
+  color: aliceblue;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.cart:hover{
+  color: #000;
+background-color: #fff;
+}
