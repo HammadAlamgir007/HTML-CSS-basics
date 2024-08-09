@@ -10,8 +10,8 @@ body {
   margin-right: auto;
   width: 70%;
   position: relative;
-  border: 4px solid black;
   margin-top: 20px;
+ 
 }
 
 .container::after {
@@ -26,11 +26,7 @@ body {
 }
 
 /* Navigation header styling */
-.nav {
-  text-align: center;
-  font-size: larger;
-  text-transform: uppercase;
-}
+
 
 /* Article image styling */
 article img {
@@ -42,6 +38,9 @@ article img {
 article {
   border: 5px solid black;
   padding: 20px;
+  display: grid;
+  grid-template-columns: 450px 1fr 1fr;
+  gap:40px;
 }
 
 /* More information link styling */
@@ -62,6 +61,8 @@ article {
   width: 100%;
   padding: 30px;
   border: none;
+  grid-column: 1/-1;
+
 }
 
 .cart:hover {
@@ -98,29 +99,10 @@ article {
 .purple {
   background-color: purple;
 }
-
-/* Colors container styling */
-.colors {
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
+header{
+  text-align: center;
+  font-size: larger;
+  background-color: rgb(250, 218, 218);
+  text-transform: uppercase;
+  grid-column: 1/-1;
 }
-.row{
-  display: flex;
-  gap: 15px;
-  flex:1;
-}
-.price
-{
-  display: flex;
-justify-content: space-between;
-align-items: center;
-}
-.price p{
-  color: gray;
-}
-.details
-{
-  margin-top: 0px;
-  flex:1;
-  }
